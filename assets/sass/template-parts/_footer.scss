@@ -1,0 +1,33 @@
+footer {
+    .footer-top {
+        background-color: rgba($color__blue, 0.9);
+        padding: 60px 0;
+
+        .widget {
+            margin-bottom: 10px;
+            overflow: hidden;
+            p, a, address, .widget-ttitle {
+                color: $color__white;
+            }
+            .widget-ttitle {
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+
+            .links {
+                li {
+                    width: 50%;
+                    float: left;
+
+                    @include lg-devices {
+                        width: 100%;
+                        float: inherit;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 10px 0;
+    }
+}

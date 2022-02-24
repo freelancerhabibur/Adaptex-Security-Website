@@ -1,0 +1,86 @@
+.about {
+    padding: 30px 0;
+    background-image: url(../images/about-bg.webp);
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    @include sm-devices {
+        padding: 60px 0;
+    }
+    .intro-title {
+        margin-bottom: 40px;
+        .title {
+            color: $color__blue;
+            font-style: italic;
+            font-size: 24px;
+
+            @include sm-devices {
+                font-size: 36px;
+            }
+        }
+    }
+    .section-content {
+        text-align: center;
+
+        @include lg-devices {
+            text-align: left;
+        }
+    }
+    .section-image {
+        display: none;
+
+        @include lg-devices {
+            display: block;
+        }
+    }
+    .title-button {
+        display: inline-block;
+        background-color: rgba($color__blue, 0.2);
+        padding: 5px 30px;
+        font-weight: 800;
+        font-size: 16px;
+        margin-bottom: 20px;
+
+        @include sm-devices {
+            font-size: 20px;
+        }
+    }
+    p {
+        line-height: 1.7;
+        font-weight: 500;
+        font-size: 13px;
+
+        @media (min-width: 410px) {
+            font-size: 15px;
+        }
+        @include sm-devices {
+            font-size: 17px;
+        }
+        a {
+            color: $color__blue;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+    }
+
+    .mission-vission {
+        padding: 60px 0 0;
+        .title {
+            display: inline-block;
+            font-weight: 500;
+            font-size: 20px;
+            writing-mode: vertical-lr;
+            transform: matrix(-1, 0, 0, -1, 0, 0);
+
+            @media (min-width: 410px) {
+                font-size: 24px;
+            }
+            @include sm-devices {
+                font-size: 32px;
+            }
+        }
+        .info {
+            padding-left: 10px;
+        }
+    }
+}
